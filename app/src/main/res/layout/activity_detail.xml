@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:titleTextColor="@android:color/black"
+    android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+
+
+
+    <ImageView
+        android:id="@+id/news_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/toolbar"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/news_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/news_image"
+        android:textSize="20sp"
+        android:layout_margin="16dp" />
+
+    <TextView
+        android:id="@+id/news_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/news_title"
+        android:textSize="16sp"
+        android:layout_margin="16dp" />
+
+    <Button
+        android:id="@+id/open_article_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/news_description"
+        android:text="Ouvrir l'article"
+        android:layout_margin="16dp"/>
+</RelativeLayout>

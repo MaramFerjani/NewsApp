@@ -1,0 +1,5 @@
+<resources>
+        <string name="app_name">NewsApp</string>
+        <string name="api_key">b3e75e036086465488b84229f9e65d5e</string> <!-- Remplace par ta clé API -->
+
+</resources>
